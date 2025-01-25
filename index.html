@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Archivo de estilos CSS -->
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/072e5df971.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <img class="icono" src="./imgs/iconoGeek.png" />
+
+    <p>
+        Hola <i class="fa-solid fa-hand-sparkles" id="saludo"></i>, 
+        Bienvenido al desafío de la legibilidad. <br>
+        Este desafío se basa en 
+        <a href="https://4geeks.com/lesson/coding-standards-guidelines">
+            las guías de código propuestas por 4Geeks.
+        </a>
+    </p>
+    <h3>Frase de <a href="https://es.wikipedia.org/wiki/Brian_Kernighan">Brian Kernighan</a>: </h3>
+    <p>
+        " Debugging is twice as hard as writing the code in the first place. <br>
+        Therefore, if you write the code as cleverly as possible, you are, <br>
+        by definition, not smart enough to debug it. "
+    </p>
+
+    <h3>Traducción al español: </h3>
+    <p>
+        " La depuración es el doble de difícil que escribir el código en primer lugar. <br>
+        Por lo tanto, si escribes el código de la forma más inteligente posible, <br>
+        por definición, no eres lo suficientemente inteligente como para depurarlo. "
+    </p>
+
+    <h2>Ejercicio 1:</h2>
+
+    <h2>Encuentra el error en este código: </h2>
+
+    <img src="./imgs/ejercicio1.png" class="ejercicio1" />
+
+    <h3>Falta una etiqueta "p" de cierre: </h3>
+
+    <img src="./imgs/ejercicio1_b.png" class="ejercicio1b" />
+
+    <h2>¿Qué mejores prácticas nos estamos perdiendo?</h2>
+
+    <ul>
+        <li><strong>Indentación</strong> o <strong>Sangría</strong></li>
+        <li><strong>Siempre estar cerrando etiquetas</strong></li>
+    </ul>
+
+    <p>Casi todas las etiquetas deben estar al principio de la línea:</p>
+
+    <img src="./imgs/ejercicio1_c.png" class="ejercicio1c" />
+
+    <p>Sólo las líneas pequeñas deben cerrarse al final de la misma línea:</p>
+
+    <img src="./imgs/ejercicio1_d.png" class="ejercicio1d" />
+
+    <p>
+        Los textos largos deben tener una longitud de línea limitado de al 
+        menos 80 caractéres:
+    </p>
+
+    <img src="./imgs/ejercicio1_e.png" class="ejercicio1e" />
+
+    <h3>Frase de <a href="https://www.karlton.org/karlton/">Phil Karlton</a>:</h3>
+    <p>
+        " There are only two hard things in Computer Science: <br>
+        cache invalidation and naming things. "
+    </p>
+
+    <h3>Traducción al español: </h3>
+    <p>
+        " Solo hay dos cosas difíciles en la Ciencia de la Computación: <br>
+        la invalidación de la cache y nombrar cosas. "
+    </p>
+
+    <h2>Escoger nombres de variables: </h2>
+    <h3>Ejercicio 2: </h3>
+
+    <h3>¿De qué se trata este código?</h3>
+
+    <img src="./imgs/ejercicio2.png" class="ejercicio2" />
+
+    <h3>¿Ahora se puede leer mejor?</h3>
+
+    <img src="./imgs/ejercicio2_b.png" class="ejercicio2b" />
+
+    <div id="diferencias">
+
+        <div id="diferencia1">
+            <h3>Nombres aleatorios de variable</h3> 
+            <img src="./imgs/ejercicio2_c.png" class="ejercicio2c" />
+        </div>
+
+        <div id="diferencia2">
+            <h3>Nombres descriptivos de variable</h3>
+            <img src="./imgs/ejercicio2_d.png" class="ejercicio2d" />
+        </div>
+
+    </div>
+
+    <h3>Alguien sabio dijo: </h3>
+    <p>
+        " Using global variables is like living in a shared apartment. <br>
+        You might think it's convenient, but your roommate will always <br>
+        mess things up for you. "
+    </p>
+
+    <h3>Traducción al español: </h3>
+    <p>
+        " Usar variables globales es como vivir en un departamento compartido. <br>
+        Puede que pienses que es conveniente, pero tu compañero de piso siempre <br>
+        te complicará las cosas. "
+    </p>
+
+    <h3>¿Porqué crees que usar variables globales está mal en este código?</h3>
+
+    <img src="./imgs/ejercicio3.png" class="ejercicio3" />
+
+    <h4>¿Porqué está arriesgado la función "accumulate"?</h4>
+
+    <img src="./imgs/ejercicio3_b.png" class="ejercicio3b" />
+
+    <h4>Es difícil de seguir el trayecto del valor de "result":</h4>
+
+    <img src="./imgs/ejercicio3_c.png" class="ejercicio3c" />
+
+    <h4>
+        Intercambiando el orden de las líneas genera una salida de código 
+        muy diferente:
+    </h4>
+
+    <img src="./imgs/ejercicio3_d.png" class="ejercicio3d" />
+
+    <div id="diferencias">
+
+        <div id="diferencia1">
+            <h3>Con variables globales</h3> 
+            <img src="./imgs/ejercicio3_e.png" class="ejercicio3e" />
+        </div>
+
+        <div id="diferencia2">
+            <h3>Sin variables globales</h3>
+            <img src="./imgs/ejercicio3_f.png" class="ejercicio3f" />
+        </div>
+
+    </div>
+
+    <h4>¿Cómo puedes acumular números sin variables globales?</h4>
+
+    <img src="./imgs/ejercicio3_g.png" class="ejercicio3g" />
+
+    <h4>
+        Almacena el resultado en una variable y pásalo a la siguiente 
+        llamada de función.
+    </h4>
+
+    <img src="./imgs/ejercicio3_h.png" class="ejercicio3h" />
+
+    <h3>Otro sabio dijo: </h3>
+
+    <p>
+        " Using nested conditions is like playing Jenga. You keep adding more <br>
+        and more conditions, and it all seems stable, but one wrong move and <br>
+        the whole thing collapses. "
+    </p>
+
+    <h3>Traducción al español: </h3>
+
+    <p>
+        " Usar condiciones anidadas es como jugar al Jenga. Sigues añadiendo más <br>
+        y más condiciones, y todo parece estable, pero un movimiento en falso y <br>
+        todo se desmorona. "
+    </p>
+
+    <h4>¿Cómo podemos eliminar la declaración "else" de esta función?</h4>
+
+    <img src="./imgs/ejercicio4.png" class="ejercicio4" />
+
+    <h4>Más del 50% de las veces, las declaraciones "else" no son necesarias.</h4>
+
+    <h4>Sabemos que la declaración "return" detiene la ejecución de la función.</h4>
+
+    <img src="./imgs/ejercicio4_b.png" class="ejercicio4b" />
+
+    <h4>Esta línea de código nunca ejecutará "if age >= 16"</h4>
+
+    <img src="./imgs/ejercicio4_c.png" class="ejercicio4c" />
+
+    <h4>¿Cómo se puede mejorar este código?</h4>
+
+    <img src="./imgs/ejercicio5.png" class="ejercicio5" />
+
+    <h4>Evitando condiciones anidadas</h4>
+
+    <img src="./imgs/ejercicio5_b.png" class="ejercicio5b" />
+
+    <div id="diferencias">
+
+        <div id="diferencia1">
+            <h3>Con condicionales anidadas</h3> 
+            <img src="./imgs/ejercicio5_c.png" class="ejercicio5c" />
+        </div>
+
+        <div id="diferencia2">
+            <h3>Sin condicionales anidadas</h3>
+            <img src="./imgs/ejercicio5_d.png" class="ejercicio5d" />
+        </div>
+
+    </div>
+
+    <h3>Otro hombre sabio dijo: </h3>
+
+    <p>
+        " Rushing to code is like trying to beat a red light. <br>
+        You might get there faster, but it's not worth the risk. "
+    </p>
+
+    <h3>Traducción al español: </h3>
+
+    <p>
+        "Apresurarse a escribir un código es como intentar saltarse un semáforo en rojo. <br>
+        Puede que llegues antes, pero no vale la pena correr el riesgo".
+    </p>
+</body>
+</html>

@@ -1,0 +1,86 @@
+body {
+    background-color: rgb(30, 30, 30);
+    color: aqua;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: normal;
+    font-size: large;
+}
+
+.icono {
+    height: 100px;
+    width: 125px;
+    margin-left: 250px;
+    margin-top: 25px;
+}
+
+.ejercicio1, 
+.ejercicio1b, 
+.ejercicio1c, 
+.ejercicio1d,
+.ejercicio1e,
+.ejercicio2,
+.ejercicio2b {
+    width: 900px;
+    height: 450px;
+}
+
+a {
+    color: rgb(206, 145, 120);
+}
+
+a:hover {
+    color: rgb(109, 101, 153);
+}
+
+#saludo {
+    color: rgb(255, 200, 61);
+}
+
+ul li {
+    margin: 10px;
+}
+
+#diferencias {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    text-align: center;
+}
+
+#diferencia1 {
+    background-color: rgb(246, 248, 250);
+    color: black;
+    width: 50%;
+}
+
+#diferencia2 {
+    background-color: rgb(30, 30, 30);
+    color: aqua;
+    width: 50%;
+}
+
+.ejercicio3 {
+    width: 450px;
+    height: 400px;
+}
+
+.ejercicio2c,
+.ejercicio2d,
+.ejercicio3b,
+.ejercicio3c,
+.ejercicio3d,
+.ejercicio3e,
+.ejercicio3f,
+.ejercicio3g,
+.ejercicio3h,
+.ejercicio4,
+.ejercicio4b,
+.ejercicio4c,
+.ejercicio5,
+.ejercicio5b,
+.ejercicio5c,
+.ejercicio5d {
+    width: 450px;
+    height: 300px;
+}
